@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+/*header*/
+#header{
+    margin:10px 20px;
+    position:relative;
+}
+#header h1{
+    width:70px;
+    height:28px;
+    background:url(../images/sp_com.png) no-repeat;
+    text-indent:-9999px;
+}
+#header h1 a{}
+
+.panel{
+    position:absolute;
+    top:50%;
+    margin-top:-8px;
+    right:0;
+}
+.panel a:before,.panel span,.panel a:after{
+    content:"";
+    display:block;
+    width:20px;
+    height:2px;
+    background:#333;
+}
+.panel span{
+    margin:5px 0;
+    text-indent:-9999px;
+}
+.panel a:after{
+    width:15px;
+}
+/*panelMenu*/
+.panelMenu{
+	position:fixed;
+	right:0;
+	top:0;
+	z-index:10;
+	background:#333;
+	width:0;
+	height:100%;
+	padding-top:30px; 
+	overflow:hidden;
+	transition:width 0.3s;
+}
+
+.panelMenu li{
+	font-size:18px;
+	line-height:45px;
+	
+}
+
+.panelMenu a{
+	color:#fff;
+	padding-left:30px;
+	display:block;
+}
+.closeBtn a{
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:30px;
+}
+
+
+.panelBg{
+	position: fixed;
+	top:0;
+	left:0;
+	z-index:5;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.5);
+}
+
+/*footer*/
+#footer{
+    background:#383F43;
+    color:#fff;
+    text-align:center;
+    font-size:12px;
+    font-weight:bold;
+    padding-top:15px;
+}
+.fMenu{
+    font-size:0;
+    height:30px;
+    line-height:30px;
+}
+.fMenu li{
+    display:inline-block;
+    font-size:12px;
+}
+.fMenu li:after{
+    content:"";
+    display:inline-block;
+    width:1px;
+    height:10px;
+    background:#fff;
+    margin:0 5px;
+}
+.fMenu li:last-child:after{
+    display:none;
+}
+.fMenu li a{
+    color:#fff;
+}
+
+.fCs{
+    display:inline-block;
+    padding:10px 0;
+}
+.call,.familySite{
+    float:left;
+    height:40px;
+    line-height:40px;
+    padding:0 15px;
+}
+.call{
+    background:#2A3033;
+    margin-right:10px;
+}
+.call span{
+    padding-right:15px;
+}
+.familySite{
+    border:0;
+    -webkit-appearance:none;
+    background:#fff url(../images/arrow.png) no-repeat 95% center;    
+    padding-right:30px;
+}
+
+.fCopy{
+    background:#4C5459;
+    line-height:60px;
+    font-size:11px;
+}
+
+
+
+
+
